@@ -1598,7 +1598,9 @@ h1,h2,h3{
     width: 100%;
     display: block;
 
-    height: 420px;
+    aspect-ratio: 3 / 4;
+    height: auto;
+
     object-fit: cover;
 
     border-radius: 26px;
@@ -1751,7 +1753,6 @@ h1,h2,h3{
     }
 
     .img-wrap img {
-        height: 320px;
         border-radius: 22px;
     }
 
@@ -1774,9 +1775,6 @@ h1,h2,h3{
 /* MOBILE PEQUENO */
 @media (max-width: 480px) {
 
-    .img-wrap img {
-        height: 280px;
-    }
 
     .cta-card h2 {
         font-size: 2rem;
