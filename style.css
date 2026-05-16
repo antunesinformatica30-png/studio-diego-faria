@@ -1938,8 +1938,26 @@ linear-gradient(
 }
 
 .footer-brand h2{
+
     font-size:2rem;
     margin-bottom:16px;
+
+    background: linear-gradient(
+        135deg,
+        #fff3d6 0%,
+        #f5d08a 25%,
+        #d6b07a 50%,
+        #ffdca8 75%,
+        #f3c56a 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 12px rgba(214,176,122,.25);
+
+    animation: goldFlow 4s ease-in-out infinite;
+    background-size: 200% 200%;
 }
 
 /* =========================
