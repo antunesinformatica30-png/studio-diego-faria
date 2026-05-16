@@ -1875,14 +1875,15 @@ linear-gradient(
 
 /* 🔥 CORREÇÃO PRINCIPAL: CENTRALIZAÇÃO REAL */
 .footer-grid{
+
     display:grid;
     grid-template-columns:1.4fr 1fr 1fr 1fr;
     gap:50px;
 
-    max-width:1280px;
-    margin:0 auto;
+    max-width:1200px;
+    margin: 0 auto; /* 🔥 ESSA É A PEÇA QUE FALTAVA */
+
     width:100%;
-    align-items:start;
 }
 
 /* =========================
