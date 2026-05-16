@@ -1,271 +1,861 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Diego Faria</title>
+
+    <title>Studio Diego Faria | Beauty Design Premium</title>
+
+    <!-- SEO -->
+    <meta name="description"
+    content="Studio Diego Faria - Design de sobrancelhas premium, brow lamination, lash lifting e cuidados faciais sofisticados.">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-<!--https://www.instagram.com/diegofariadesigner?igsh=bGNzZXZ4ZGMyaGc4-->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="logo"><img src="marcadagua2.png" alt="Logo"></div>
-            
-            <h1>Evidencie ainda mais o<br>
-            que já é <span>magnífico</span> em você.</h1>
-            <p>Design de sobrancelhas personalizado para valorizar seus traços
-                naturais com técnicas profissionais e acabamento impecável.
+
+<!-- ===================================================== -->
+<!-- BACKGROUND EFFECTS -->
+<!-- ===================================================== -->
+
+<div class="bg-blur blur-gold"></div>
+<div class="bg-blur blur-rose"></div>
+
+<!-- ===================================================== -->
+<!-- HEADER -->
+<!-- ===================================================== -->
+
+<header class="header">
+
+    <div class="container header-container">
+
+        <!-- LOGO -->
+        <a href="#" class="logo">
+
+            <img src="marcadagua2.png"
+            alt="Studio Diego Faria">
+
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="navbar">
+
+            <a href="#services">Serviços</a>
+            <a href="#about">Sobre</a>
+            <a href="#procedures">Procedimentos</a>
+            <a href="#feedbacks">Feedbacks</a>
+
+        </nav>
+
+        <!-- BUTTON -->
+        <a href="https://wa.me/message/JESTILTISFVRC1"
+        target="_blank"
+        class="header-btn">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            Agendar
+
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- HERO -->
+<!-- ===================================================== -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <!-- LEFT -->
+        <div class="hero-content">
+
+            <!-- TAG -->
+            <div class="hero-tag">
+
+                <span></span>
+
+                <p>
+                    Beauty Design Premium
+                </p>
+
+            </div>
+
+            <!-- TITLE -->
+            <h1>
+
+                Evidencie ainda mais
+                o que já é
+                <span>magnífico</span>
+                em você.
+
+            </h1>
+
+            <!-- DESCRIPTION -->
+            <p class="hero-description">
+
+                Design de sobrancelhas personalizado para valorizar
+                seus traços naturais com sofisticação,
+                leveza e acabamento impecável.
+
             </p>
-            <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-primary">AGENDE SEU HORÁRIO AGORA</a>
+
+            <!-- BUTTONS -->
+            <div class="hero-buttons">
+
+                <a href="https://wa.me/message/JESTILTISFVRC1"
+                target="_blank"
+                class="btn-primary">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    AGENDAR HORÁRIO
+
+                </a>
+
+                <a href="#services"
+                class="btn-secondary">
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                    EXPLORAR SERVIÇOS
+
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="hero-image">
-            <img src="hero.jpg" alt="Design de sobrancelhas">
+        <!-- RIGHT -->
+        <div class="hero-visual">
+
+            <!-- IMAGE -->
+            <div class="hero-image">
+
+                <img src="herocerto.png"
+                alt="Studio Diego Faria">
+
+            </div>
+
         </div>
 
-        <div class="hero-bottom">
-            <div class="botton-item">
-                <h3>Design com Henna</h3>
-                <span>Definição e preenchimento</span>
-            </div>
-            <div class="botton-item">
-                <h3>Brow Lamination</h3>
-                <span>Alinhamento e volume</span>
-            </div>
-            <div class="botton-item">
-                <h3>Lash Lifting</h3>
-                <span>Cílios curvados naturalmente</span>
-            </div>
-            <div class="botton-item">
-                <h3>Argiloterapia</h3>
-                <span>Cuidados faciais</span>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <section class="services">
-        <div class="services-header">
-            <h2>Cuidados que <span>Transformam</span></h2>
-                <p>Procedimentos exclusivos pensados para valorizar
-                    sua beleza natural com técnicas profissionais.</p>
-        </div>
+    <!-- HERO SERVICES -->
+    <div class="hero-services">
 
-        <div class="services-cards">
-            <!--CARD 1-->
-            <div class="card"> 
-                <img src="cunhada - Copia.jpg" alt="Design com Henna">
-                <div class="card-content">
+        <div class="container hero-services-grid">
+
+            <!-- ITEM -->
+            <article class="hero-service-item">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-pencil"></i>
+
+                </div>
+
+                <div>
+
                     <h3>Design com Henna</h3>
-                    <p>Definição e preenchimento para sobrancelhasmais marcantes 
-                        e harmônicas.</p>
-                        <a href="https://wa.me/message/JESTILTISFVRC1">Saiba mais</a>
-                </div>
-            </div>
 
-             <!--CARD 2-->
-             <div class="card">
-                <img src="meu.jpg" alt="Cesign Masculino">
-                <div class="card-content">
-                    <h3>Design Masculino</h3>
-                    <p>Alinhamento natural respeitando o formato do rosto masculino.</p>
-                        <a href="https://wa.me/message/JESTILTISFVRC1">Saiba mais</a>
+                    <span>
+                        Definição sofisticada
+                    </span>
+
                 </div>
+
+            </article>
+
+            <!-- ITEM -->
+            <article class="hero-service-item">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
                 </div>
-             <!--CARD 3-->
-            <div class="card"> 
-                <img src="facial.png" alt="Cuidados Faciais">
-                <div class="card-content">
-                    <h3>Cuidados Faciais</h3>
-                    <p>Tratamentos que revitalizam a pele e realçam sua beleza natural.</p>
-                        <a href="https://wa.me/message/JESTILTISFVRC1">Saiba mais</a>
+
+                <div>
+
+                    <h3>Brow Lamination</h3>
+
+                    <span>
+                        Alinhamento elegante
+                    </span>
+
                 </div>
-            </div>
+
+            </article>
+
+            <!-- ITEM -->
+            <article class="hero-service-item">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Lash Lifting</h3>
+
+                    <span>
+                        Curvatura natural
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- ITEM -->
+            <article class="hero-service-item">
+
+                <div class="service-icon">
+
+                    <i class="fa-solid fa-spa"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Argiloterapia</h3>
+
+                    <span>
+                        Cuidados faciais
+                    </span>
+
+                </div>
+
+            </article>
+
         </div>
-    </section>
 
-    <section class="about">
-        <div class="about-container">
-            <div class="about-card">
-                <!--IMAGEM-->
-                <div class="about-image">
-                    <img src="trabalhando.png" alt="Profisional">
-                </div>
+    </div>
 
-                <!--TEXTO-->
-                <div class="about-content">
-                    <span class="about-tag">SOBRE MIM</span>
+</section>
 
-                    <h2>Beleza não é detalhe,<br><span>é transformação.</span></h2>
+<!-- ===================================================== -->
+<!-- SERVICES -->
+<!-- ===================================================== -->
 
-                    <p>Prazer, sou Diego Faria, designer de sobrancelhas.✨
-                        <br>Iniciei há pouco tempo na área, mas já descobri uma verdadeira paixão pelo design.
-                        A cada atendimento, busco valorizar a beleza única de cada cliente, realçando o olhar
-                        e elevando a autoestima.
-                    </p>
-                    <p>Estou sempre em evolução, aprendendo novas técnicas para oferecer resultados
-                        naturais, harmoniosos e de qualidade. <br>Acredito que as sobrancelhas têm o poder
-                        de transformar não só a aparência, mas também a forma como a pessoa se vê - e isso
-                        é o que me motiva todos os dias.
-                    </p>
+<section class="services" id="services">
 
-                    <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-about">AGENDE SEU HORÁRIO AGORA</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="container">
 
-    <section class="procedures">
-        <div class="procedures-container">
+        <!-- HEADER -->
+        <div class="section-header center">
 
-            <!-- BLOCO 1 - HENNA FEMININA-->
-             <div class="procedure-card">
-                <div class="procedure-text">
-                    <span class="tag">PROCEDIMENTO</span>
+            <span class="section-tag">
+                PROCEDIMENTOS
+            </span>
 
-                    <h2>Design com Henna</h2>
+            <h2>
 
-                    <p>Realce seu olhar com naturalidade e definição. 
-                        <br>A henna preenche falhas e valoriza o formato ideal.</p>
+                Cuidados que
+                <span>transformam</span>
 
-                        <ul>
-                            <li>Resultado imediato</li>
-                            <li>Preenchimento natural</li>
-                            <li>Ideal para testar formato</li>
-                        </ul>
+            </h2>
 
-                    <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-about">AGENDE SEU HORÁRIO AGORA</a>
-                </div>
-                    <div class="procedure-images henna">
-                        <img src="hamster.jpg" alt="">
-                        <img src="mariana.jpg" alt="">
-                        <img src="mae.png" alt="">
-                    </div>
-             </div>
-
-                <!--BLOCO 2 - MASCULINO-->
-            <div class="procedure-card reverse">
-                    <div class="procedure-text">
-                        <span class="tag">PROCEDIMENTO</span>
-
-                        <h2>Design Masculino</h2>
-                        <p>Sobrancelhas alinhadas e naturais, respeitando o formato masculino.</p>
-
-                        <ul>
-                            <li>Acabamento discreto</li>
-                            <li>Visual alinhado</li>
-                            <li>Naturalidade</li>
-                        </ul>
-
-                        <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-about">AGENDE SEU HORÁRIO AGORA</a>
-                    </div>
-                    <div class="procedure-images masculino">
-                        <img src="eu.jpg" alt="">
-                        <img src="lucas.jpg" alt="">
-                    </div>
-            </div>
-
-                <!--BLOCO 3 - CÍLIOS-->
-            <div class="procedure-card">
-
-                    <div class="procedure-text">
-                        <span class="tag">PROCEDIMENTO</span>
-
-                        <h2>Alongamento de Cílios</h2>
-
-                        <p>Destaque seu olhar com volume, curvatura e elegância.</p>
-
-                        <ul>
-                            <li>Olhar marcante</li>
-                            <li>Efeito duradouro</li>
-                            <li>Praticidade</li>
-                        </ul>
-
-                        <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-about">AGENDE SEU HORÁRIO AGORA</a>
-                </div>
-
-                <div class="procedure-images cilios">
-                    <img src="nath.jpg" alt="">
-                </div>
-            </div>
-    </section>
-
-    <section class="ticket-section">
-
-        <div class="ticket ticket-alt">
-            <span class="tag-n">NOVOS ATENDIMENTOS</span>
-
-            <h2>Brow Lamination & Lash Lifting</h2>
             <p>
-                Técnicas modernas que alinham, modelam e valorizam seus fios naturais,
-                trazendo mais definição, elegância e praticidade no dia a dia.
+
+                Técnicas desenvolvidas para valorizar sua beleza
+                natural com acabamento refinado e sofisticado.
+
             </p>
-            <p>Ideal para quem busca um olhar marcante sem perder a naturalidade,
-                com resultados duradouros e acabamento sofisticado.
-            </p>
 
-            <ul class="ticket-benefits">
-                <li>✓ Efeito natural e sofisticado</li>
-                <li>✓ Fios alinhados e com mais definição</li>
-                <li>✓ Resultado duradouro</li>
-            </ul>
-                <a href="https://wa.me/message/JESTILTISFVRC1" class="btn-about">AGENDE SEU HORÁRIO AGORA</a>
         </div>
-    </section>
 
-    <section class="feedback-section">
-        <h2 class="feedback-title">O que dizem <span>
-            sobre o atendimento:
-        </span></h2>
+        <!-- GRID -->
+        <div class="services-grid">
 
-        <p class="feedback-phrase">
-            Cada atendimento é feito com propósito - e cada retorno recebido confirma isso.
-        </p>
+            <!-- CARD -->
+            <article class="service-card">
 
-        <div class="feedback-gallery">
-            <div class="feedback-card">
-                <img src="feedback1.png" alt="">
-            </div>
-            <div class="feedback-card">
-                <img src="feedback2.png" alt="">
-            </div>
-        </div>
-    </section>
+                <div class="service-image">
 
-    <footer class="footer">
+                    <img src="dscerto.jpg"
+                    alt="Design com Henna">
 
-        <div class="footer-container">
+                </div>
 
-            <!--MARCA ESQUERDA-->
-            <div class="footer-brand">
-                <h2>Studio Diego Faria</h2>
-                <span>Beauty Design</span>
-                <p>Realçando sua beleza com técnicas moder, cuidado <br>e excelência em cada detalhe.</p>
-            </div>
-            <!--DIREITA-->
-            <div class="footer-contact">
-                <h3>Contato</h3>
-                    <div class="social-icons">
-                    <a href="https://wa.me/message/JESTILTISFVRC1" target="_blank">
-                        <img src="whatsapp.png" alt="WhatsApp"></a>
-                        <a href="https://www.instagram.com/diegofariadesigner?igsh=bGNzZXZ4ZGMyaGc4" target="_blank">
-                        <img src="instagram.png" alt="Instagram"></a>
+                <div class="service-content">
+
+                    <div class="service-card-icon">
+
+                        <i class="fa-solid fa-pencil"></i>
+
                     </div>
-                <p>📍 Atendimento com hora marcada</p>
-            </div>
 
-            <!--LOGO CENTRAL-->
-            <div class="footer-center">
-                <img src="marcadagua3.png" alt="Logo Studio">
-            </div>
-            <!--LINHA FINAL-->
-            <div class="footer-bottom">
-                <p>© 2026 Studio Diego Faria - Todos os direitos reservados.</p>
+                    <h3>
+                        Design com Henna
+                    </h3>
 
-            </div>
+                    <p>
+
+                        Preenchimento elegante para sobrancelhas
+                        mais harmônicas e marcantes.
+
+                    </p>
+
+                    <a href="https://wa.me/message/JESTILTISFVRC1"
+                    target="_blank">
+
+                        Saiba mais
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- CARD -->
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img src="meu.jpg"
+                    alt="Design Masculino">
+
+                </div>
+
+                <div class="service-content">
+
+                    <div class="service-card-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <h3>
+                        Design Masculino
+                    </h3>
+
+                    <p>
+
+                        Acabamento discreto respeitando
+                        o formato natural masculino.
+
+                    </p>
+
+                    <a href="https://wa.me/message/JESTILTISFVRC1"
+                    target="_blank">
+
+                        Saiba mais
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- CARD -->
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img src="facial.png"
+                    alt="Cuidados Faciais">
+
+                </div>
+
+                <div class="service-content">
+
+                    <div class="service-card-icon">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                    </div>
+
+                    <h3>
+                        Cuidados Faciais
+                    </h3>
+
+                    <p>
+
+                        Tratamentos que revitalizam sua pele
+                        com acabamento premium.
+
+                    </p>
+
+                    <a href="https://wa.me/message/JESTILTISFVRC1"
+                    target="_blank">
+
+                        Saiba mais
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
         </div>
-    </footer>
-    
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- ABOUT -->
+<!-- ===================================================== -->
+
+<section class="about" id="about">
+
+    <div class="container about-container">
+
+        <!-- IMAGE -->
+        <div class="about-visual">
+
+            <div class="about-image">
+
+                <img src="trabalhando.png"
+                alt="Diego Faria">
+
+            </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="about-content">
+
+            <span class="section-tag">
+                SOBRE MIM
+            </span>
+
+            <h2>
+
+                Beleza não é detalhe,
+                <span class="highlight-transform">é transformação.</span>
+
+            </h2>
+
+            <p>
+
+                Sou Diego Faria, designer de sobrancelhas apaixonado
+                por elevar autoestima através de um atendimento
+                sofisticado, elegante e personalizado.
+
+            </p>
+
+            <p>
+
+                Cada rosto possui traços únicos — e meu objetivo
+                é criar harmonia, definição e naturalidade
+                em cada atendimento.
+
+            </p>
+
+            <!-- FEATURES -->
+            <div class="about-features">
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Atendimento personalizado
+
+                </div>
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Técnicas modernas
+
+                </div>
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Resultado sofisticado
+
+                </div>
+
+            </div>
+
+            <!-- BUTTON -->
+            <a href="https://wa.me/message/JESTILTISFVRC1"
+            target="_blank"
+            class="btn-primary">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                AGENDAR AGORA
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PROCEDURES -->
+<!-- ===================================================== -->
+
+<section class="procedures" id="procedures">
+
+    <div class="container">
+
+        <div class="section-header center">
+
+            <span class="section-tag">
+                EXPERIÊNCIA PREMIUM
+            </span>
+
+            <h2>
+                Procedimentos que <span class="gold-strong">valorizam</span>
+                seu olhar.
+            </h2>
+
+        </div>
+
+        <article class="procedure-card">
+
+            <div class="procedure-content">
+
+                <span class="procedure-tag">
+                    DESIGN COM HENNA
+                </span>
+
+                <h3>
+                    Naturalidade e definição.
+                </h3>
+
+                <p>
+                    A henna proporciona preenchimento elegante
+                    e acabamento sofisticado.
+                </p>
+
+                <ul>
+                    <li>Resultado imediato</li>
+                    <li>Preenchimento natural</li>
+                    <li>Formato personalizado</li>
+                </ul>
+
+                <div class="procedure-cta">
+                    <a href="https://wa.me/message/JESTILTISFVRC1"
+                       target="_blank"
+                       class="btn-secondary">
+                        AGENDAR AGORA
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="procedure-gallery gallery-3">
+
+                <div class="img-wrap">
+                    <img src="hamster.jpg" alt="Design com henna - resultado natural">
+                </div>
+
+                <div class="img-wrap">
+                    <img src="mariana.jpg" alt="Resultado profissional sobrancelhas">
+                </div>
+
+                <div class="img-wrap">
+                    <img src="mae.png" alt="Antes e depois procedimento henna">
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- PREMIUM CTA -->
+<!-- ===================================================== -->
+
+<section class="premium-cta">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <span class="section-tag">
+                NOVOS ATENDIMENTOS
+            </span>
+
+            <h2>
+
+                Brow Lamination
+                & Lash Lifting
+
+            </h2>
+
+            <p>
+
+                Técnicas modernas para alinhar,
+                modelar e valorizar seus fios naturais.
+
+            </p>
+
+            <div class="cta-benefits">
+
+                <div class="benefit-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Efeito sofisticado
+
+                </div>
+
+                <div class="benefit-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Resultado natural
+
+                </div>
+
+                <div class="benefit-item">
+
+                    <i class="fa-solid fa-check"></i>
+
+                    Longa duração
+
+                </div>
+
+            </div>
+
+            <a href="https://wa.me/message/JESTILTISFVRC1"
+            target="_blank"
+            class="btn-primary">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                AGENDAR HORÁRIO
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FEEDBACKS -->
+<!-- ===================================================== -->
+
+<section class="feedbacks" id="feedbacks">
+
+    <div class="container">
+
+        <div class="section-header center">
+
+            <span class="section-tag">
+                FEEDBACKS
+            </span>
+
+            <h2>
+
+                O que dizem sobre
+                <span>o atendimento</span>
+
+            </h2>
+
+            <p>
+
+                Cada atendimento é feito com propósito,
+                excelência e cuidado em cada detalhe.
+
+            </p>
+
+        </div>
+        <div class="feedback-slider">
+
+            <div class="feedback-slide active">
+                <div class="feedback-card">
+                    <img src="feedback1.png" alt="Feedback">
+                </div>
+            </div>
+
+            <div class="feedback-slide">
+                <div class="feedback-card">
+                    <img src="feedback2.png" alt="Feedback">
+                </div>
+            </div>
+
+            <div class="feedback-slide">
+                <div class="feedback-card">
+                    <img src="feedback3.png" alt="Feedback">
+                </div>
+            </div>
+
+            <div class="feedback-slide">
+                <div class="feedback-card">
+                    <img src="feedback4.png" alt="Feedback">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+
+                <!--<img src="marcadagua3.png"
+                alt="Studio Diego Faria">-->
+
+                <h2 class="gold-title">
+
+                    Studio Diego Faria
+
+                </h2>
+
+                <p>
+
+                    Design de sobrancelhas premium,
+                    valorizando sua beleza natural
+                    com sofisticação e excelência.
+
+                </p>
+
+            </div>
+
+            <!-- NAV -->
+            <div class="footer-column">
+
+                <h3>Navegação</h3>
+
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre</a>
+                <a href="#procedures">Procedimentos</a>
+                <a href="#feedbacks">Feedbacks</a>
+
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <span>
+                        Atendimento via WhatsApp
+                    </span>
+
+                </div>
+
+                <div class="footer-contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Atendimento com horário marcado
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="footer-column">
+
+                <h3>Redes Sociais</h3>
+
+                <div class="footer-social">
+
+                    <a href="https://wa.me/message/JESTILTISFVRC1"
+                    target="_blank">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/diegofariadesigner?igsh=bGNzZXZ4ZGMyaGc4"
+                    target="_blank">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Studio Diego Faria —
+                Todos os direitos reservados.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+let index = 0;
+const slides = document.querySelectorAll('.feedback-slide');
+
+function showSlide(i) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[i].classList.add('active');
+}
+
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}, 4000);
+</script>
+
 </body>
 </html>
