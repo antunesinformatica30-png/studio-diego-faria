@@ -11,6 +11,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    /*outline: 1px solid rgba(255,0,0,.08);*/
 }
 
 html{
@@ -23,6 +24,10 @@ body{
     font-family:'Inter', sans-serif;
     overflow-x:hidden;
     position:relative;
+}
+
+body, html {
+    overflow-x: hidden;
 }
 
 /* =========================
@@ -294,9 +299,18 @@ h1,h2,h3{
 
 .header-container{
 
+    max-width: 100%;
+    overflow-x: clip;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+}
+
+.header-btn {
+    max-width: 100%;
+    min-width: 0;
+    flex: 0 1 auto;
 }
 
 .logo{
@@ -421,7 +435,7 @@ h1,h2,h3{
 
 .hero-info-grid{
     margin-top:80px;
-    transform:translateX(120px);
+    transform:translateX(40px);
     display:flex;
     gap:30px;
 }
