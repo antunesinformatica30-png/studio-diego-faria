@@ -1880,7 +1880,7 @@ linear-gradient(
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 50px;
 
    position: relative;
