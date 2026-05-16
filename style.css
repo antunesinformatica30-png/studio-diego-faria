@@ -1879,8 +1879,12 @@ linear-gradient(
 /* GRID PRINCIPAL */
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
     align-items: start;
 }
 
@@ -1892,11 +1896,11 @@ linear-gradient(
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
 
-    /* garante que ela não fique “puxada” no grid */
+    grid-column: 1 / -1;
     justify-self: center;
+    margin-bottom: 40px;
 }
 
 .footer-brand img {
