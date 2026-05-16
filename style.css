@@ -1863,167 +1863,197 @@ linear-gradient(
     }
 }
 
+
 /* =========================
    FOOTER
 ========================= */
 
-.footer {
-    padding: 110px 0 40px;
-    display: flex;
-    justify-content: center;
+.footer{
+    padding:110px 6% 40px;
+    border-top:1px solid rgba(255,255,255,.05);
 }
 
-/* GRID PRINCIPAL */
-.footer-grid {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+/* 🔥 CORREÇÃO PRINCIPAL: CENTRALIZAÇÃO REAL */
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1fr;
+    gap:50px;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-
-   position: relative;
-   left: 80px;
+    max-width:1280px;
+    margin:0 auto;
+    width:100%;
+    align-items:start;
 }
 
 /* =========================
-   BRAND (CENTRALIZADO DE VERDADE)
+   BRAND (COLUNA 1)
 ========================= */
 
-.footer-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    /* garante que ela não fique “puxada” no grid */
-    justify-self: center;
-}
-
-.footer-brand img {
-    width: 110px;
-    margin-bottom: 24px;
-    display: block;
-}
-
-.footer-brand h2 {
-    font-size: 2rem;
-    margin-bottom: 16px;
-
-    background: linear-gradient(
-        135deg,
-        #fff3d6 0%,
-        #f5d08a 25%,
-        #d6b07a 50%,
-        #ffdca8 75%,
-        #f3c56a 100%
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    text-shadow: 0 0 12px rgba(214,176,122,.25);
-
-    animation: goldFlow 4s ease-in-out infinite;
-    background-size: 200% 200%;
+.footer-col-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
 }
 
 /* =========================
-   COLUNAS
+   NAV (COLUNA 2)
+   🔥 AJUSTE DE POSICIONAMENTO FINO
 ========================= */
 
-.footer-column h3 {
-    margin-bottom: 24px;
-    font-size: 1.2rem;
+.footer-col-nav{
+    display:flex;
+    flex-direction:column;
 }
 
-.footer-column a {
-    display: block;
-    color: #cfcfcf;
-    margin-bottom: 14px;
-    transition: var(--transition);
-}
-
-.footer-column a:hover {
-    color: var(--gold);
+/* se quiser levemente mais à direita visualmente */
+.footer-col-nav{
+    justify-self:end;
 }
 
 /* =========================
-   CONTATO
+   CONTACT (COLUNA 3)
 ========================= */
 
-.footer-contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 18px;
-    color: #cfcfcf;
+.footer-col-contact{
+    display:flex;
+    flex-direction:column;
 }
 
-.footer-contact-item i {
-    color: var(--gold);
+/* =========================
+   SOCIAL (COLUNA 4)
+========================= */
+
+.footer-col-social{
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+   BRAND ELEMENTS
+========================= */
+
+.footer-brand img{
+    width:110px;
+    margin-bottom:24px;
+}
+
+.footer-brand h2{
+    font-size:2rem;
+    margin-bottom:16px;
+}
+
+/* =========================
+   TITLES DAS COLUNAS
+========================= */
+
+.footer-column h3{
+    margin-bottom:24px;
+    font-size:1.2rem;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-column a{
+    display:block;
+    color:#cfcfcf;
+    margin-bottom:14px;
+    transition:var(--transition);
+}
+
+.footer-column a:hover{
+    color:var(--gold);
+}
+
+/* =========================
+   CONTACT ITEMS
+========================= */
+
+.footer-contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:18px;
+    color:#cfcfcf;
+}
+
+.footer-contact-item i{
+    color:var(--gold);
 }
 
 /* =========================
    SOCIAL
 ========================= */
 
-.footer-social {
-    display: flex;
-    gap: 16px;
+.footer-social{
+    display:flex;
+    gap:16px;
 }
 
-.footer-social a {
-    width: 52px;
-    height: 52px;
+.footer-social a{
+    width:52px;
+    height:52px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    border-radius: 50%;
+    border-radius:50%;
 
-    background: rgba(255,255,255,.04);
-    border: 1px solid rgba(255,255,255,.06);
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.06);
+    color:#fff;
 
-    color: #fff;
-    transition: var(--transition);
+    transition:var(--transition);
 }
 
-.footer-social a:hover {
-    transform: translateY(-4px);
-    border-color: rgba(214,176,122,.18);
-    color: var(--gold);
+.footer-social a:hover{
+    transform:translateY(-4px);
+    border-color:rgba(214,176,122,.18);
+    color:var(--gold);
 }
 
 /* =========================
    FOOTER BOTTOM
 ========================= */
 
-.footer-bottom {
-    margin-top: 70px;
-    padding-top: 30px;
-
-    border-top: 1px solid rgba(255,255,255,.05);
-    text-align: center;
+.footer-bottom{
+    margin-top:70px;
+    padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.05);
+    text-align:center;
 }
 
-.footer,
-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+/* =========================
+   RESPONSIVO FOOTER (IMPORTANTE)
+========================= */
+
+@media(max-width:1200px){
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:40px;
+    }
+
+    .footer-col-nav{
+        justify-self:start;
+    }
 }
 
-.footer-grid,
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+@media(max-width:768px){
+    .footer-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
 
+    .footer-col-brand,
+    .footer-col-nav,
+    .footer-col-contact,
+    .footer-col-social{
+        align-items:center;
+        justify-self:center;
+    }
+}
 @keyframes goldShine {
     0%{
         background-position: 0%;
