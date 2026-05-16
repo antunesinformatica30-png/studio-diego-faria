@@ -1877,6 +1877,8 @@ linear-gradient(
 .footer-grid {
     width: 100%;
     max-width: 1200px;
+    position: relative;
+    left: 10px;
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 50px;
