@@ -8,6 +8,7 @@
 ========================= */
 
 *{
+   min-width:0;
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -27,7 +28,8 @@ body{
 }
 
 body, html {
-    overflow-x: hidden;
+    overflow-x: clip;
+    max-width: 100%;
 }
 
 /* =========================
