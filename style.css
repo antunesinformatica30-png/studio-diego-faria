@@ -1896,6 +1896,27 @@ linear-gradient(
 
     margin-bottom:16px;
 }
+.footer-brand h2{
+    font-size:2rem;
+    margin-bottom:16px;
+
+    background: linear-gradient(
+        135deg,
+        #fff3d6 0%,
+        #f5d08a 25%,
+        #d6b07a 50%,
+        #ffdca8 75%,
+        #f3c56a 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 12px rgba(214,176,122,.25);
+
+    animation: goldFlow 4s ease-in-out infinite;
+    background-size: 200% 200%;
+}
 
 
 
@@ -1984,275 +2005,6 @@ linear-gradient(
     1px solid rgba(255,255,255,.05);
 
     text-align:center;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-/* =========================================================
-   RESPONSIVE SYSTEM - STUDIO DIEGO FARIA
-   ========================================================= */
-
-/* =========================
-   TABLET / LAPTOP PEQUENO
-   (até 1024px)
-========================= */
-
-@media (max-width: 1024px) {
-
-    section {
-        padding: 90px 6%;
-    }
-
-    /* ===== GRID GERAL ===== */
-
-    .hero-container,
-    .about-container,
-    .procedure-card {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-    /* ===== HERO ===== */
-
-    .hero {
-        padding-top: 150px;
-        padding-bottom: 160px;
-    }
-
-    .hero h1 {
-        font-size: 4.2rem;
-        line-height: 1.05;
-    }
-
-    .hero-description {
-        max-width: 100%;
-    }
-
-    .hero-image img {
-        transform: none;
-        scale: 1;
-        top: 0;
-        right: 0;
-        max-width: 100%;
-    }
-
-    .hero-info-grid {
-        transform: none;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero-services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* ===== SERVICES ===== */
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* ===== ABOUT ===== */
-
-    .about-content p {
-        max-width: 100%;
-    }
-
-    /* ===== PROCEDURES ===== */
-
-    .procedure-content p {
-        max-width: 100%;
-    }
-
-    .procedure-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* ===== FEEDBACK ===== */
-
-    .feedback-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* ===== FOOTER ===== */
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* =========================
-   MOBILE (TABLET PEQUENO)
-   (até 768px)
-========================= */
-
-@media (max-width: 768px) {
-
-    section {
-        padding: 80px 6%;
-    }
-
-    /* ===== NAV ===== */
-
-    .navbar {
-        display: none;
-    }
-
-    /* ===== HERO ===== */
-
-    .hero {
-        padding-top: 140px;
-        padding-bottom: 140px;
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .hero-info-grid {
-        flex-direction: column;
-        transform: none;
-        gap: 16px;
-    }
-
-    .hero-services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* ===== TITLES ===== */
-
-    .section-header h2,
-    .about-content h2,
-    .procedure-content h2,
-    .cta-card h2 {
-        font-size: 2.4rem;
-    }
-
-    /* ===== SERVICES ===== */
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* ===== ABOUT ===== */
-
-    .about-image img {
-        height: 520px;
-    }
-
-    /* ===== PROCEDURES ===== */
-
-    .procedure-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .img-wrap {
-        max-width: 100%;
-    }
-
-    .img-wrap img {
-        height: 340px;
-    }
-
-    /* ===== FEEDBACK ===== */
-
-    .feedback-slider {
-        border-radius: 20px;
-    }
-
-    .feedback-card {
-        padding: 20px;
-    }
-
-    .feedback-card img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* ===== CTA ===== */
-
-    .cta-card {
-        padding: 50px 30px;
-    }
-
-    .cta-benefits {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* ===== FOOTER ===== */
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================
-   MOBILE PEQUENO
-   (até 500px)
-========================= */
-
-@media (max-width: 500px) {
-
-    /* ===== HERO ===== */
-
-    .hero h1 {
-        font-size: 2.4rem;
-        line-height: 1.05;
-    }
-
-    .hero-description {
-        font-size: .95rem;
-    }
-
-    /* ===== TITLES ===== */
-
-    .section-header h2,
-    .about-content h2,
-    .procedure-content h2,
-    .cta-card h2 {
-        font-size: 2rem;
-    }
-
-    /* ===== BUTTONS ===== */
-
-    .btn-primary,
-    .btn-secondary,
-    .header-btn {
-        width: 100%;
-    }
-
-    /* ===== IMAGES ===== */
-
-    .hero-image img {
-        height: 420px;
-    }
-
-    .img-wrap img {
-        height: 280px;
-    }
-
-    .service-image img {
-        height: 300px;
-    }
-
-    /* ===== FEEDBACK ===== */
-
-    .feedback-card {
-        padding: 16px;
-    }
-
-    /* ===== SPACING ===== */
-
-    section {
-        padding: 70px 5%;
-    }
 }
 
 @keyframes goldShine {
