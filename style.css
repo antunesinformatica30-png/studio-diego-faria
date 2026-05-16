@@ -1868,16 +1868,18 @@ linear-gradient(
 ========================= */
 
 .footer {
-    padding: 110px 6% 40px;
-    border-top: 1px solid rgba(255,255,255,.05);
+    padding: 110px 0 40px;
+    display: flex;
+    justify-content: center;
 }
 
 /* GRID PRINCIPAL */
 .footer-grid {
+    width: 100%;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 50px;
-    align-items: start;
 }
 
 /* =========================
