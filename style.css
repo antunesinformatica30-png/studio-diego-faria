@@ -1867,10 +1867,6 @@ linear-gradient(
    FOOTER
 ========================= */
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     padding: 110px 6% 40px;
     border-top: 1px solid rgba(255,255,255,.05);
@@ -1879,12 +1875,8 @@ linear-gradient(
 /* GRID PRINCIPAL */
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 50px;
-
-    max-width: 1200px;
-    margin: 0 auto;
-
     align-items: start;
 }
 
@@ -1896,11 +1888,11 @@ linear-gradient(
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
-    grid-column: 1 / -1;
+    /* garante que ela não fique “puxada” no grid */
     justify-self: center;
-    margin-bottom: 40px;
 }
 
 .footer-brand img {
@@ -2009,8 +2001,7 @@ linear-gradient(
 
     border-top: 1px solid rgba(255,255,255,.05);
     text-align: center;
-}
-@keyframes goldShine {
+}@keyframes goldShine {
     0%{
         background-position: 0%;
     }
