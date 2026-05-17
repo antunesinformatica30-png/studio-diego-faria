@@ -598,94 +598,6 @@ h1,h2,h3{
 /* =========================================
    HERO MOBILE — SUAVIZAR CORTE DA FOTO
 ========================================= */
-
-@media (max-width: 768px){
-
-    .hero{
-        overflow:hidden;
-    }
-
-    .hero-visual{
-        overflow:hidden;
-    }
-
-    .hero-image{
-        position:relative;
-        overflow:hidden;
-    }
-
-    .hero-image img{
-
-        width:100%;
-        max-width:100%;
-
-        position:relative;
-
-        top:0;
-        right:0;
-
-        transform:scale(1.02);
-
-        object-fit:cover;
-
-        /* remove peso visual */
-        mix-blend-mode:normal;
-
-        /* suaviza bordas */
-        -webkit-mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.25) 6%,
-            #000 18%,
-            #000 82%,
-            rgba(0,0,0,.25) 94%,
-            transparent 100%
-        );
-
-        mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.25) 6%,
-            #000 18%,
-            #000 82%,
-            rgba(0,0,0,.25) 94%,
-            transparent 100%
-        );
-
-        filter:
-        brightness(.98)
-        contrast(1.02);
-    }
-
-    /* reduz drasticamente o blur */
-    .hero-image::before{
-
-        width:240px;
-        height:240px;
-
-        top:50%;
-        right:-40px;
-
-        transform:translateY(-50%);
-
-        opacity:.18;
-
-        filter:blur(70px);
-
-        background:
-        radial-gradient(
-            circle,
-            rgba(214,176,122,.12) 0%,
-            rgba(214,176,122,.05) 45%,
-            transparent 75%
-        );
-    }
-}
-
-
-
 @media (max-width: 480px){
 
     .hero h1{
@@ -802,29 +714,78 @@ h1,h2,h3{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
-    .hero-services{
+    .hero-image{
+        overflow:hidden;
         position:relative;
-        bottom:auto;
-        margin-top:40px;
     }
 
-    .hero-services-grid{
-        grid-template-columns:1fr;
+    .hero-image img{
+
+        width:100%;
+        max-width:100%;
+
+        display:block;
+
+        transform:scale(1.04);
+
+        object-fit:cover;
+
+        mix-blend-mode:normal;
+
+        filter:
+        brightness(.98)
+        contrast(1.02);
+
+        /* fade MUITO mais suave */
+        -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+
+            transparent 0%,
+            rgba(0,0,0,.15) 8%,
+            #000 18%,
+            #000 72%,
+            rgba(0,0,0,.92) 82%,
+            rgba(0,0,0,.55) 90%,
+            transparent 100%
+        );
+
+        mask-image:
+        linear-gradient(
+            to bottom,
+
+            transparent 0%,
+            rgba(0,0,0,.15) 8%,
+            #000 18%,
+            #000 72%,
+            rgba(0,0,0,.92) 82%,
+            rgba(0,0,0,.55) 90%,
+            transparent 100%
+        );
+    }
+}
+
+@media (max-width:768px){
+
+    .header-container{
+        gap:12px;
+        overflow:hidden;
     }
 
-    .hero-service-item{
-        padding:22px;
-    }
+    .header-btn{
 
-    .service-icon{
-        width:46px;
-        height:46px;
-    }
+        width:auto;
 
-    .hero-service-item h3{
-        font-size:1rem;
+        min-width:unset;
+        max-width:220px;
+
+        padding:0 22px;
+
+        font-size:.9rem;
+
+        flex-shrink:1;
     }
 }
 
