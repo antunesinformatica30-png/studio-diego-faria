@@ -1601,7 +1601,7 @@ h1,h2,h3{
     display: block;
 
     aspect-ratio: 3 / 4;
-    height: auto;
+    height: 420px;
 
     object-fit: cover;
 
