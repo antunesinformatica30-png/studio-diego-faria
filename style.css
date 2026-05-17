@@ -380,6 +380,9 @@ h1,h2,h3{
     padding-top:180px;
     padding-bottom:220px;
     overflow:visible;
+
+    background:#000000;
+    
 }
 
 .hero::after{
@@ -598,6 +601,7 @@ h1,h2,h3{
     .hero-container{
         grid-template-columns:1fr;
         gap:60px;
+        background:#000000;
     }
 
     .hero h1{
@@ -630,96 +634,48 @@ h1,h2,h3{
 
     .hero{
 
-        background:
-        linear-gradient(
-            to bottom,
-            #060606 0%,
-            #060606 55%,
-            #040404 78%,
-            #000000 100%
-        );
+        padding-top:120px;
+        padding-bottom:80px;
+        background:#000;
     }
 
-     /* dissolve lateral esquerda */
     .hero-image::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:90px;
+    z-index:4;
+    pointer-events:none;
 
-        content:"";
-
-        position:absolute;
-
-        top:0;
-        left:0;
-        bottom:0;
-
-        width:90px;
-
-        z-index:4;
-
-        pointer-events:none;
-
-        background:
-        linear-gradient(
-            to right,
-            #060606 0%,
-            rgba(6,6,6,.92) 22%,
-            rgba(6,6,6,.55) 55%,
-            transparent 100%
-        );
-    }
-    .hero-image::after{
-
-        content:"";
-
-        position:absolute;
-
-        left:0;
-        right:0;
-        bottom:0;
-
-        height:220px;
-
-        background:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0) 0%,
-            rgba(0,0,0,.18) 30%,
-            rgba(0,0,0,.55) 60%,
-            rgba(0,0,0,.92) 82%,
-            #000 100%
-        );
-
-        z-index:3;
-
-        pointer-events:none;
-    }
+    background: linear-gradient(
+        to right,
+        #000 0%,
+        rgba(0,0,0,.92) 22%,
+        rgba(0,0,0,.55) 55%,
+        transparent 100%
+    );
 }
 
-    /* SUAVIZA A PARTE INFERIOR */
-    .hero-image::after{
+.hero-image::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:160px;
+    pointer-events:none;
+    z-index:3;
 
-        content:"";
-
-        position:absolute;
-
-        left:0;
-        right:0;
-        bottom:0;
-
-        height:160px;
-
-        background:
-        linear-gradient(
-            to bottom,
-            rgba(6,6,6,0) 0%,
-            rgba(6,6,6,.15) 40%,
-            rgba(6,6,6,.55) 72%,
-            #060606 100%
-        );
-
-        pointer-events:none;
-
-        z-index:3;
-    }
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,.15) 40%,
+        rgba(0,0,0,.55) 72%,
+        #000 100%
+    );
+}
 
     /* BOTÃO DO MENU */
     .header-btn{
@@ -976,7 +932,6 @@ h1,h2,h3{
 }
 
 
-
 .service-card:hover{
     transform:translateY(-18px) scale(1.015);
     border:1px solid rgba(214,176,122,.18);
@@ -1008,7 +963,7 @@ h1,h2,h3{
 .service-img {
     object-fit: cover;
     object-position: center top;
-    transform: scale(1.1);
+    transform: none;
 }
 
 .service-image img{
@@ -1023,6 +978,17 @@ h1,h2,h3{
     transform:scale(1.08);
     filter:brightness(1) contrast(1.12) saturate(1.02);
 }
+
+.argiloterapia-img{
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+    object-position:center 30%;
+
+    transform:none !important;
+}
+
 
 .service-content{
     position:relative;
@@ -1071,18 +1037,6 @@ h1,h2,h3{
 .service-content a:hover{
     gap:16px;
     color:#fff1c2;
-}
-
-/* =========================
-   ABOUT
-========================= */
-
-.about-container{
-    display:grid;
-    grid-template-columns:1.2fr 0.8fr;
-    align-items:center;
-    gap:70px;
-    width:100%;
 }
 
 /* =========================
@@ -1137,26 +1091,46 @@ h1,h2,h3{
         font-size:1.6rem;
     }
 
+     .service-image{
+        position:relative;
+        background:#0a0a0a;
+        overflow:hidden;
+    }
+
     .service-image img{
+        transform:none !important;
+        scale:1 !important;
+        height:100%;
+    }
+
+  .argiloterapia-img{
+        width:100%;
         height:320px;
+
+        object-fit:contain;
+        object-position:center;
+
+        display:block;
+        position:relative;
+        z-index:2;
     }
 
-    /* ABOUT */
-    .about-container{
-        gap:40px;
-    }
+    .service-image::before{
+        content:"";
+        position:absolute;
+        inset:0;
 
-    .about-content h2{
-        font-size:2.6rem;
-    }
+        background:
+        radial-gradient(circle at center,
+            rgba(214,176,122,.10),
+            rgba(0,0,0,.85)
+        );
 
-    .about-image{
-        max-width:100%;
-        aspect-ratio:4/5;
+        z-index:1;
     }
-
-    .about-content p{
-        font-size:0.95rem;
+    .service-card .service-image{
+        height:320px;
+        overflow:hidden;
     }
 }
 
@@ -1189,6 +1163,7 @@ h1,h2,h3{
         border-radius:26px;
     }
 }
+
 .about-container {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -1203,6 +1178,14 @@ h1,h2,h3{
 .about {
     position: relative;
     overflow: hidden;
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    align-items:center;
+    gap:70px;
+    width:100%;
 }
 
 .about::before {
@@ -1459,9 +1442,16 @@ h1,h2,h3{
         line-height: 1.6;
     }
 
-    .about-image {
-        border-radius: 28px;
-        aspect-ratio: 3 / 4;
+    .about-image{
+        aspect-ratio: auto;
+        height: 550px;
+    }
+
+    .about-image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center bottom;
     }
 }
 
