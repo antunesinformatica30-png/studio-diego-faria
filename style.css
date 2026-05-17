@@ -574,6 +574,10 @@ h1,h2,h3{
    RESPONSIVIDADE
 ========================= */
 
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
 @media (max-width: 1200px){
 
     .hero-container{
@@ -612,7 +616,7 @@ h1,h2,h3{
     .hero-info-card span{
         font-size:.85rem;
     }
-}}
+}
 
 /* =========================
    HERO SERVICES
