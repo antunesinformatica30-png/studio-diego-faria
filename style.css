@@ -728,136 +728,73 @@ h1,h2,h3{
     }
 }
 
-@media (max-width: 768px){
-
-    .hero{
-        overflow:hidden;
-    }
-
-    .hero-visual{
-        overflow:hidden;
-    }
+@media (max-width:768px){
 
     .hero-image{
+
         position:relative;
+
         overflow:hidden;
     }
 
     .hero-image img{
 
         width:100%;
-        max-width:100%;
 
-        position:relative;
+        display:block;
 
-        top:0;
-        right:0;
-
-        transform:scale(1.02);
-
-        object-fit:cover;
-
-        /* remove peso visual */
-        mix-blend-mode:normal;
-
-        /* suaviza bordas */
-        -webkit-mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.25) 6%,
-            #000 18%,
-            #000 82%,
-            rgba(0,0,0,.25) 94%,
-            transparent 100%
-        );
-
-        mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.25) 6%,
-            #000 18%,
-            #000 82%,
-            rgba(0,0,0,.25) 94%,
-            transparent 100%
-        );
+        transform:scale(1.08);
 
         filter:
-        brightness(.98)
-        contrast(1.02);
+        brightness(.96)
+        contrast(1.03);
+
+        border-bottom-left-radius:120px;
+        border-bottom-right-radius:120px;
     }
 
-    /* reduz drasticamente o blur */
-    .hero-image::before{
+    .hero-image::after{
 
-        width:240px;
-        height:240px;
+        content:"";
 
-        top:50%;
-        right:-40px;
+        position:absolute;
 
-        transform:translateY(-50%);
+        left:0;
+        right:0;
+        bottom:0;
 
-        opacity:.18;
-
-        filter:blur(70px);
+        height:180px;
 
         background:
-        radial-gradient(
-            circle,
-            rgba(214,176,122,.12) 0%,
-            rgba(214,176,122,.05) 45%,
-            transparent 75%
+        linear-gradient(
+            to bottom,
+            rgba(6,6,6,0) 0%,
+            rgba(6,6,6,.35) 55%,
+            #060606 100%
         );
+
+        pointer-events:none;
     }
 }
-
-
-    /* reduz drasticamente o blur */
-    .hero-image::before{
-
-        width:240px;
-        height:240px;
-
-        top:50%;
-        right:-40px;
-
-        transform:translateY(-50%);
-
-        opacity:.18;
-
-        filter:blur(70px);
-
-        background:
-        radial-gradient(
-            circle,
-            rgba(214,176,122,.12) 0%,
-            rgba(214,176,122,.05) 45%,
-            transparent 75%
-        );
-    }
-}
-
 @media (max-width:768px){
-
-    .header-container{
-        gap:12px;
-        overflow:hidden;
-    }
 
     .header-btn{
 
         width:auto;
 
-        min-width:unset;
-        max-width:220px;
+        max-width:170px;
 
-        padding:0 15px;
+        height:52px;
 
-        font-size:.9rem;
+        padding:0 22px;
 
-        flex-shrink:1;
+        font-size:.95rem;
+
+        border-radius:999px;
+
+        flex:none;
+
+        white-space:nowrap;
     }
 }
 
