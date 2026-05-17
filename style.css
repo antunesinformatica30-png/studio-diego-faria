@@ -2506,124 +2506,103 @@ h1,h2,h3{
 }
 
 /* =========================================================
-   MOBILE FIXES — HERO / FOTO / ROLAGEM
+   FIX FINAL MOBILE
+   Remove scroll lateral + suaviza corte da foto
 ========================================================= */
 
 @media (max-width: 768px){
 
-    /* REMOVE qualquer vazamento lateral */
+    /* REMOVE QUALQUER ESTOURO HORIZONTAL */
     html,
     body{
-        overflow-x:hidden !important;
         width:100%;
         max-width:100%;
-    }
-
-    body{
+        overflow-x:hidden !important;
         position:relative;
     }
 
-    /* HERO */
-    .hero{
-        overflow:hidden;
+    body{
+        overscroll-behavior-x:none;
     }
 
-    .hero-container{
-        overflow:hidden;
-    }
-
-    .hero-visual{
-        overflow:hidden;
-        width:100%;
-        max-width:100%;
-    }
-
+    section,
+    .hero,
+    .hero-container,
+    .hero-visual,
     .hero-image{
+        max-width:100vw;
         overflow:hidden;
-        width:100%;
-        max-width:100%;
     }
 
     /* FOTO DO PROFISSIONAL */
+    .hero-image{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
     .hero-image img{
 
         width:100%;
-        max-width:100%;
+        max-width:92vw;
 
-        position:relative;
+        right:0 !important;
+        left:0 !important;
+        top:0 !important;
 
-        right:auto;
-        left:auto;
-
-        top:0;
-
-        scale:1;
-
-        transform:scale(1.04);
+        transform:none !important;
+        scale:1 !important;
 
         object-fit:contain;
-        object-position:center top;
 
-        display:block;
-
-        margin:0 auto;
-
-        /* REMOVE corte seco */
+        /* SUAVIZA O CORTE */
         -webkit-mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.95) 10%,
-            #000 88%,
-            transparent 100%
-        );
+        radial-gradient(circle at center,
+        rgba(0,0,0,1) 68%,
+        rgba(0,0,0,.96) 78%,
+        rgba(0,0,0,.75) 88%,
+        transparent 100%);
 
         mask-image:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgba(0,0,0,.95) 10%,
-            #000 88%,
-            transparent 100%
-        );
+        radial-gradient(circle at center,
+        rgba(0,0,0,1) 68%,
+        rgba(0,0,0,.96) 78%,
+        rgba(0,0,0,.75) 88%,
+        transparent 100%);
     }
 
-    /* REMOVE blur pesado mobile */
+    /* REMOVE O BLUR QUE PESA */
     .hero-image::before{
         display:none !important;
     }
 
-    /* REMOVE qualquer elemento causando scroll */
+    /* REMOVE ELEMENTOS QUE PODEM ESTOURAR */
     .floating-card,
+    .bg-blur,
     .blur-gold,
     .blur-rose{
-        max-width:100vw;
+        display:none !important;
     }
 
     /* MENU FIXO */
     .header{
-        overflow:hidden;
         width:100%;
+        max-width:100vw;
+        overflow:hidden;
+        backdrop-filter:blur(10px);
+        -webkit-backdrop-filter:blur(10px);
     }
 
     .header-container{
         width:100%;
+        max-width:100%;
         overflow:hidden;
     }
 
-    .header-btn,
-    .menu-btn,
-    .btn-menu,
-    .nav-toggle{
-
+    .header-btn{
         max-width:140px;
-
-        overflow:hidden;
-
-        text-overflow:ellipsis;
-
-        white-space:nowrap;
-
+        font-size:.72rem;
+        padding:0 12px;
         flex-shrink:1;
     }
 }
