@@ -2504,3 +2504,28 @@ h1,h2,h3{
         max-width: 160px; /* 🔥 trava real do estouro */
     }
 }
+
+/*HERO BLUR FIX*/
+@media (max-width: 768px) {
+
+    .hero-image img::before {
+       
+        width: 220px;
+        height: 220px;
+
+        top: 50%;
+        left: 50%;
+        right: auto;
+
+        transform: translate(-50%, -50%);
+
+        filter: blur(40px);
+
+        opacity: .35;
+    }
+
+    .hero-image,
+    .hero-visual {
+        overflow: hidden;
+    }
+}
