@@ -598,6 +598,61 @@ h1,h2,h3{
 /* =========================================
    HERO MOBILE — SUAVIZAR CORTE DA FOTO
 ========================================= */
+@media (max-width:768px){
+
+    .hero-image{
+        position:relative;
+        overflow:hidden;
+    }
+
+    .hero-image img{
+
+        width:100%;
+        max-width:100%;
+
+        display:block;
+
+        transform:scale(1.04);
+
+        object-fit:cover;
+
+        mix-blend-mode:normal;
+
+        filter:
+        brightness(.98)
+        contrast(1.02);
+
+        -webkit-mask-image:none;
+        mask-image:none;
+    }
+
+    /* fade suave REAL */
+    .hero-image::after{
+
+        content:"";
+
+        position:absolute;
+
+        left:0;
+        right:0;
+        bottom:0;
+
+        height:180px;
+
+        background:
+        linear-gradient(
+            to bottom,
+            rgba(6,6,6,0) 0%,
+            rgba(6,6,6,.25) 30%,
+            rgba(6,6,6,.65) 60%,
+            #060606 100%
+        );
+
+        pointer-events:none;
+        z-index:3;
+    }
+}
+
 @media (max-width: 480px){
 
     .hero h1{
