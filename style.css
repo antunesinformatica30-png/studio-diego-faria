@@ -726,40 +726,76 @@ h1,h2,h3{
         overflow:hidden;
     }
 
-   .hero-image img{
+    .hero-image img{
 
-    width:100%;
+        width:100%;
+        max-width:100%;
 
-    display:block;
+        position:relative;
 
-    object-fit:cover;
+        top:0;
+        right:0;
 
-    transform:scale(1.12);
+        transform:scale(1.02);
 
-    position:relative;
+        object-fit:cover;
 
-    z-index:1;
+        /* remove peso visual */
+        mix-blend-mode:normal;
 
-    -webkit-mask-image:
-    radial-gradient(
-        ellipse at center,
-        rgba(0,0,0,1) 58%,
-        rgba(0,0,0,.92) 70%,
-        rgba(0,0,0,.72) 82%,
-        rgba(0,0,0,.35) 92%,
-        transparent 100%
-    );
+        /* suaviza bordas */
+        -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0,0,0,.25) 6%,
+            #000 18%,
+            #000 82%,
+            rgba(0,0,0,.25) 94%,
+            transparent 100%
+        );
 
-    mask-image:
-    radial-gradient(
-        ellipse at center,
-        rgba(0,0,0,1) 58%,
-        rgba(0,0,0,.92) 70%,
-        rgba(0,0,0,.72) 82%,
-        rgba(0,0,0,.35) 92%,
-        transparent 100%
-    );
+        mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0,0,0,.25) 6%,
+            #000 18%,
+            #000 82%,
+            rgba(0,0,0,.25) 94%,
+            transparent 100%
+        );
+
+        filter:
+        brightness(.98)
+        contrast(1.02);
+    }
+
+    /* reduz drasticamente o blur */
+    .hero-image::before{
+
+        width:240px;
+        height:240px;
+
+        top:50%;
+        right:-40px;
+
+        transform:translateY(-50%);
+
+        opacity:.18;
+
+        filter:blur(70px);
+
+        background:
+        radial-gradient(
+            circle,
+            rgba(214,176,122,.12) 0%,
+            rgba(214,176,122,.05) 45%,
+            transparent 75%
+        );
+    }
 }
+
 
     /* reduz drasticamente o blur */
     .hero-image::before{
