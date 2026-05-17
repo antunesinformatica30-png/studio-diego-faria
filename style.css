@@ -599,14 +599,16 @@ h1,h2,h3{
 /* =========================================
    HERO MOBILE — FOTO SUAVE REAL
 ========================================= */
-
 @media (max-width:768px){
 
-    .hero{
-        overflow:hidden;
-    }
+    .hero-image img{
 
-    @media (max-width:768px){
+        right:0;
+
+        transform:scale(1.18);
+
+        object-position:58% top;
+    }
 
     .hero{
 
