@@ -711,59 +711,91 @@ h1,h2,h3{
     }
 }
 
-@media (max-width:768px){
+@media (max-width: 768px){
+
+    .hero{
+        overflow:hidden;
+    }
+
+    .hero-visual{
+        overflow:hidden;
+    }
 
     .hero-image{
-
         position:relative;
-
-        overflow:visible;
-
-        padding-bottom:0;
-
-        margin-bottom:0;
-
-        background:transparent;
+        overflow:hidden;
     }
 
     .hero-image img{
 
         width:100%;
-
-        display:block;
-
-        object-fit:cover;
-
-        transform:scale(1.12);
+        max-width:100%;
 
         position:relative;
 
-        z-index:1;
+        top:0;
+        right:0;
 
-        /* ESSENCIAL */
-        mask-image:linear-gradient(
+        transform:scale(1.02);
+
+        object-fit:cover;
+
+        /* remove peso visual */
+        mix-blend-mode:normal;
+
+        /* suaviza bordas */
+        -webkit-mask-image:
+        linear-gradient(
             to bottom,
-            rgba(0,0,0,1) 0%,
-            rgba(0,0,0,1) 58%,
-            rgba(0,0,0,.85) 72%,
-            rgba(0,0,0,.35) 86%,
+            transparent 0%,
+            rgba(0,0,0,.25) 6%,
+            #000 18%,
+            #000 82%,
+            rgba(0,0,0,.25) 94%,
             transparent 100%
         );
 
-        -webkit-mask-image:linear-gradient(
+        mask-image:
+        linear-gradient(
             to bottom,
-            rgba(0,0,0,1) 0%,
-            rgba(0,0,0,1) 58%,
-            rgba(0,0,0,.85) 72%,
-            rgba(0,0,0,.35) 86%,
+            transparent 0%,
+            rgba(0,0,0,.25) 6%,
+            #000 18%,
+            #000 82%,
+            rgba(0,0,0,.25) 94%,
             transparent 100%
         );
+
+        filter:
+        brightness(.98)
+        contrast(1.02);
     }
 
-    .hero-image::after{
-        display:none;
+    /* reduz drasticamente o blur */
+    .hero-image::before{
+
+        width:240px;
+        height:240px;
+
+        top:50%;
+        right:-40px;
+
+        transform:translateY(-50%);
+
+        opacity:.18;
+
+        filter:blur(70px);
+
+        background:
+        radial-gradient(
+            circle,
+            rgba(214,176,122,.12) 0%,
+            rgba(214,176,122,.05) 45%,
+            transparent 75%
+        );
     }
 }
+
 @media (max-width:768px){
 
     .header-container{
