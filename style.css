@@ -720,6 +720,44 @@ h1,h2,h3{
     }
 }
 
+@media (max-width:768px){
+
+    .hero-image{
+        position:relative;
+    }
+
+    .hero-image .edge-fade{
+        display:none;
+    }
+
+    .hero-image::before{
+
+        content:"";
+
+        position:absolute;
+
+        left:0;
+        top:0;
+
+        width:120px;
+        height:100%;
+
+        z-index:5;
+
+        pointer-events:none;
+
+        background:
+        linear-gradient(
+            to right,
+            #060606 0%,
+            rgba(6,6,6,.98) 18%,
+            rgba(6,6,6,.82) 38%,
+            rgba(6,6,6,.35) 68%,
+            transparent 100%
+        );
+    }
+}
+
 
 @media (max-width: 480px){
 
