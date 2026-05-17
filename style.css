@@ -596,11 +596,6 @@ h1,h2,h3{
     }
 }
 
-
-/* =========================================
-   HERO MOBILE — SUAVIZAR CORTE DA FOTO
-========================================= */
-
 /* =========================================
    HERO MOBILE — FOTO SUAVE REAL
 ========================================= */
@@ -625,13 +620,32 @@ h1,h2,h3{
         );
     }
 
+     /* dissolve lateral esquerda */
     .hero-image::before{
 
-        opacity:.18;
+        content:"";
 
-        filter:blur(120px);
+        position:absolute;
+
+        top:0;
+        left:0;
+        bottom:0;
+
+        width:90px;
+
+        z-index:4;
+
+        pointer-events:none;
+
+        background:
+        linear-gradient(
+            to right,
+            #060606 0%,
+            rgba(6,6,6,.92) 22%,
+            rgba(6,6,6,.55) 55%,
+            transparent 100%
+        );
     }
-
     .hero-image::after{
 
         content:"";
