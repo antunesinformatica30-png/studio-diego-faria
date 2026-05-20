@@ -1243,6 +1243,24 @@ h1,h2,h3{
         transform:none !important;
         scale:1 !important;
     }
+
+    .service-card .service-image{
+        height:320px !important;
+        overflow:hidden;
+    }
+
+    .service-card .service-image .argiloterapia-img{
+
+        width:100% !important;
+        height:100% !important;
+
+        object-fit:cover !important;
+
+        object-position:center 25% !important;
+
+        transform:none !important;
+        scale:1 !important;
+    }
 }
 @media (max-width: 480px){
 
