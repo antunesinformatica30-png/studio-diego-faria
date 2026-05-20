@@ -1508,16 +1508,18 @@ h1,h2,h3{
         line-height: 1.6;
     }
 
-    .about-image{
-        aspect-ratio: auto;
-        height: 550px;
+        .about-image{
+        height: auto;
+        aspect-ratio: unset;
+        overflow: visible;
     }
 
     .about-image img{
-        height: 100%;
         width: 100%;
-        object-fit: cover;
-        object-position: center 20%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        display: block;
     }
 }
 
