@@ -2360,11 +2360,7 @@ h1,h2,h3{
     .hero-image img{
         height:520px;
     }
-
-    .about-image img{
-        height:560px;
-    }
-
+   
     .hero-services-grid,
     .feedback-grid,
     .footer-grid{
