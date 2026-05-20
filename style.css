@@ -1139,7 +1139,10 @@ h1,h2,h3{
 
 @media (max-width: 768px){
 
-    /* SERVICES */
+    /* =========================
+       SERVICES
+    ========================= */
+
     .services{
         padding-top:140px;
     }
@@ -1157,49 +1160,90 @@ h1,h2,h3{
         font-size:1.6rem;
     }
 
-     .service-image{
+    /* =========================
+       CONTAINER DA IMAGEM
+    ========================= */
+
+    .service-card .service-image{
+
         position:relative;
-        background:#0a0a0a;
-        overflow:hidden;
-    }
 
-    .service-image img{
-        transform:none !important;
-        scale:1 !important;
-        height:100%;
-    }
-
-  .argiloterapia-img{
-        width:100%;
         height:320px;
 
-        object-fit:contain;
-        object-position:center;
+        overflow:hidden;
 
-        display:block;
-        position:relative;
-        z-index:2;
+        background:#0a0a0a;
+
+        border-bottom:
+        1px solid rgba(255,255,255,.04);
     }
 
+    /* glow interno suave */
     .service-image::before{
+
         content:"";
+
         position:absolute;
+
         inset:0;
 
         background:
-        radial-gradient(circle at center,
+        radial-gradient(
+            circle at center,
             rgba(214,176,122,.10),
-            rgba(0,0,0,.85)
+            rgba(0,0,0,.82)
         );
 
         z-index:1;
+
+        pointer-events:none;
     }
-    .service-card .service-image{
-        height:320px;
-        overflow:hidden;
+
+    /* =========================
+       IMAGEM PADRÃO
+    ========================= */
+
+    .service-image img{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        object-position:center center;
+
+        display:block;
+
+        position:relative;
+        z-index:2;
+
+        transform:none !important;
+        scale:1 !important;
+    }
+
+    /* =========================
+       ARGILOTERAPIA
+    ========================= */
+
+    .argiloterapia-img{
+
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        /* AJUSTE FINO DO ENQUADRAMENTO */
+        object-position:center 28%;
+
+        display:block;
+
+        position:relative;
+        z-index:2;
+
+        transform:none !important;
+        scale:1 !important;
     }
 }
-
 @media (max-width: 480px){
 
     /* ABOUT */
